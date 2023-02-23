@@ -53,52 +53,5 @@ class SearchFieldState extends State<SearchField> {
                   onChanged: widget.onChanged),
             ),
     );
-
-    // return Box(
-    //     mix: MainMix.box.apply(MainMix.textField), child: const TextField());
-
-    // return AnimatedCrossFade(
-    //     firstChild: Pressable(
-    //       child: Box(
-    //         mix: MainMix.box.mix(width(54), height(54)),
-    //         child: IconMix(mix: MainMix.icon, Icons.search),
-    //       ),
-    //       onPressed: () {
-    //         setState(() {
-    //           _isTextFieldShown = true;
-    //         });
-    //       },
-    //     ),
-    //     secondChild: Box(
-    //         mix: MainMix.box.apply(MainMix.textField),
-    //         child: const TextField()),
-    //     crossFadeState: !_isTextFieldShown
-    //         ? CrossFadeState.showFirst
-    //         : CrossFadeState.showSecond,
-    //     duration: const Duration(seconds: 500));
-    // return AnimatedSwitcher(
-    //   duration: const Duration(
-    //     milliseconds: 500,
-    //   ),
-    //   transitionBuilder: (child, animation) => ScaleTransition(
-    //     scale: animation,
-    //     child: child,
-    //   ),
-    //   switchInCurve: Curves.ease,
-    //   switchOutCurve: Curves.fastOutSlowIn,
-    //   child: _isTextFieldShown
-    //       ? Box(mix: MainMix.box, child: const TextField())
-    //       : Pressable(
-    //           child: Box(
-    //             mix: MainMix.box.mix(width(54), height(54)),
-    //             child: IconMix(mix: MainMix.icon, Icons.search),
-    //           ),
-    //           onPressed: () {
-    //             setState(() {
-    //               _isTextFieldShown = true;
-    //             });
-    //           },
-    //         ),
-    // );
   }
 }
